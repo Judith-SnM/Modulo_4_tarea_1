@@ -1,19 +1,19 @@
 class Consultorio {
     constructor(Paciente) {
-        this.Pacientes = [];
+        this.pacientes = [];
 
     }
     get getPacientes() {
-        return this.Pacientes;
+        return this.pacientes;
     }
 
     set setPacientes(Paciente) {
-        this.Pacientes.push(Paciente);
+        this.pacientes.push(Paciente);
     }
 
     //Metodo
     buscarPorNombre = function (nombre) {
-        return this.Pacientes.find(paciente => paciente.nombre === nombre);
+        return this.pacientes.find(paciente => paciente.nombre === nombre);
     }
 
     mostrardatos = function () {
